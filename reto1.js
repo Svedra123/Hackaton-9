@@ -1,6 +1,6 @@
 const cipherNumbre = 3
-const cipherText = "Hola mundo"
-const cipherDeco = "Krod pxqgr"
+const cipherText = prompt("Hola ingresa tu frase a codear")
+const cipherDeco = prompt("Hola ingresa el codigo a desifrar")
 
 let i=0
 let a = 0
@@ -17,15 +17,18 @@ for (let i = 0; i <= cipherText.length; i++) {
     
     b = String.fromCharCode(a)
 
-
-    switch (cipherText.charCodeAt(i)) {
-        case "x":
+   
+    switch (b) {
+        case "#":
+            b = " "
+            break;
+        case "{":
             b = "a"
             break;
-        case "y":
+        case "|":
             b = "b"
         break;
-        case "z":
+        case "}":
         b = "c"
         break;
     }
@@ -40,6 +43,22 @@ for (let j = 0; j <= cipherDeco.length; j++) {
     c = cipherDeco.charCodeAt(j) - 3 
     
     d = String.fromCharCode(c)
+
+    switch (d) {
+        case "":
+            d = " "
+            break;
+        case "^":
+            d = "x"
+            break;
+        case "_":
+            d = "y"
+        break;
+        case "`":
+            d = "z"
+        break;
+    }
+
 
     console.log (d)
 
