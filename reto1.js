@@ -28,7 +28,16 @@ for (let i = 0; i <= cipherText.length; i++) {
             b = "b"
         break;
         case "}":
-        b = "c"
+            b = "c"
+        break;
+        case "[":
+            b = "A"
+            break;
+        case "2":
+            b = "B"
+        break;
+        case "]":
+        b = "C"
         break;
     }
 
@@ -54,6 +63,15 @@ for (let j = 0; j <= cipherDeco.length; j++) {
             d = "y"
         break;
         case "`":
+            d = "z"
+        break;
+        case ">":
+            d = "x"
+            break;
+        case "?":
+            d = "y"
+        break;
+        case "@":
             d = "z"
         break;
     }
