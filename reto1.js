@@ -1,4 +1,3 @@
-const cipherNumbre = 3
 const cipherText = prompt("Hola ingresa tu frase a codear")
 const cipherDeco = prompt("Hola ingresa el codigo a desifrar")
 
